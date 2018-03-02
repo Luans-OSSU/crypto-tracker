@@ -1,11 +1,11 @@
 import React from "react";
-import {View, text} from "react-native";
-
+import {View, Text} from "react-native";
+import style from "./Header-style";
 
 const Header = ({children}) => {
     return (
-        <View>
-            <Text>{children}</Text>
+        <View style={style.headerContainer}>
+            <Text style={style.header}>{children}</Text>
         </View>
     )
 }
