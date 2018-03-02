@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Provider} from "react-redux";
 
-import {Header} from "./src/components";
+import {Header, CryptoContainer} from "./src/components";
 import Store from "./src/Store";
 
 export default class App extends React.Component {
@@ -11,6 +11,7 @@ export default class App extends React.Component {
       <Provider store={Store}>
         <View>
           <Header>Crypto Tracker</Header>
+          <CryptoContainer />
         </View>
       </Provider>
     );
