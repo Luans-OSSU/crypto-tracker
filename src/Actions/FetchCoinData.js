@@ -3,7 +3,7 @@ import { apiBaseUrl } from "../Utils/Constants";
 import { FETCHING_COIN_DATA, FETCHING_COIN_DATA_SUCCESS, FETCHING_COIN_DATA_FAIL } from "../Utils/ActionTypes";
 
 
-export default function FetchCoinData() {
+export default fetchCoinData = () => {
     return dispatch => {
         dispatch({ type: FETCHING_COIN_DATA })
 
